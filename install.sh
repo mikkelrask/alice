@@ -58,7 +58,7 @@ parted -s "$disk" set 1 boot on
 
 # Format the partition
 echo "Formatting partition ${disk}1 with filesystem $filesystem..."
-mkfs."$filesystem" "${disk}1"
+mkfs."$filesystem" "${disk}1" -l "${hostname}"
 
 # Mount the partition
 echo "Mounting partition ${disk}1 to /mnt..."
