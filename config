@@ -1,0 +1,33 @@
+# Set the disk to use for the installation
+disk: /dev/sda
+
+# Set the filesystem to use for the installation
+# Supported filesystems: ext4, xfs, btrfs
+filesystem: btrfs
+
+# Set the time zone for the system
+# Time zones are specified using the tz database name, e.g. America/New_York
+timezone: Europe/Copenhagen
+
+# Set the locale for the system
+# The locale should be specified in the form language_territory.codeset
+locale: da_DK.UTF-8
+
+# Set the keyboard layout for the system
+# The keymap should be specified using the name of the layout, e.g. us, gb, de
+keymap: dk
+
+# Set the hostname for the system
+hostname: hosty
+
+# Set the password for the root user
+root_password: mypassword
+
+# Set the username for the new user
+username: raske
+
+# Set the password for the new user
+user_password: mypassword
+
+# Additional packages to install
+packages: git neovim x11 i3wm lightdm ranger base-devel firefox kitty zsh
